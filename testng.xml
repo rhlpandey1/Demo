@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+	<listener class-name="listeners.Listeners"/>
+	<listener class-name="listeners.ExtentReportsListeners"/>
+	<listener class-name="listeners.AnnotationTransformer"/>
+</listeners>
+  <test name="Validating the title in LandingPage">
+    <classes>
+      <class name="udemy.testcases.ValidateTitleTest"/>
+    </classes>
+  </test> <!-- Test -->
+   <test name="Login with different credentials">
+    <classes>
+      <class name="udemy.testcases.DemoTest"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->
