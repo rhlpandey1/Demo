@@ -73,6 +73,7 @@ public class Utilities {
 	 */
 	public static List<String> getData(String testDataSheetPath,String sheetName,String testCaseName,String uniqueColumnIdentifier) throws IOException
 	{
+		System.out.println("inside get data");
 		List<String> list=new ArrayList<String>();
 		FileInputStream fis=null;
 		XSSFWorkbook workBook=null;
